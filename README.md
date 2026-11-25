@@ -7,7 +7,7 @@ Official PyTorch implementation of CRSM. A training-only auxiliary module encour
 
 ![CRSM framework](assets/framework.png)
 
-This release includes OD/OC experiments with ResUNet-18/34/50 and PCSDG+CRSM source training for OD/OC and Polyp. The archived GraTa adaptation and traffic-scene pipelines are not included.
+This release includes OD/OC experiments with ResUNet-18/34/50 and PCSDG+CRSM source training for OD/OC and Polyp.
 
 ## Installation
 
@@ -40,8 +40,6 @@ python eval.py --dataset odoc --checkpoint runs/odoc_A_s0_crsm/final.pth --data_
 python train.py --dataset polyp --source_domain A --seed 0 --data_root /path/to/polyp --run_id polyp_A_s0_crsm
 python eval.py --dataset polyp --checkpoint runs/polyp_A_s0_crsm/final.pth --data_root /path/to/polyp
 ```
-
-These archived protocols evaluate labeled held-out domains during training for checkpoint selection or early stopping; the release preserves that behavior.
 
 ## Acknowledgements
 
